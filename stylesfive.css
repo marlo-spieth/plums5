@@ -1,0 +1,97 @@
+/*RESET*/
+
+html {
+  box-sizing: border-box;
+  font-size: 32px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  color:#ffffff;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*PROPERTIES*/
+
+body {
+	font-size:150%;
+}
+
+.one, .two {
+	font-family: 'Cutive Mono', monospace;
+}
+
+.three {
+		font-family: 'Pacifico', cursive;
+		font-style: bold;
+}
+
+.two {
+	float:right;
+}
+
+.one, .two, .three {
+	margin-top:4%;
+}
+
+.container {
+	width:50%;
+	margin:0 auto;
+}
+
+/*ANIMATION*/
+@keyframes flash_one {
+	0% {color:#ffffff;}
+	33% {color:#000000;}
+	66% {color:#ffffff;}
+	99% {color:#ffffff;}
+}
+
+.one {
+	animation-name:flash_one;
+	animation-duration:4s; 
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes flash_two {
+	0% {color:#ffffff;}
+	33% {color:#ffffff;}
+	66% {color:#000000;}
+	99% {color:#ffffff;}
+}
+
+.two {
+	animation-name:flash_two;
+	animation-duration:4s; 
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes flash_three {
+	0% {color:#ffffff;}
+	33% {color:#ffffff;}
+	66% {color:#ffffff;}
+	99% {color:#000000;}
+}
+
+.three {
+	animation-name:flash_three;
+	animation-duration:4s; 
+	animation-iteration-count: infinite;
+}
+
